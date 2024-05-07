@@ -806,7 +806,7 @@ DisableXhciOnOlderPlatVer (
                                          );
     if (EFI_ERROR (Status)) {
       DEBUG ((DEBUG_ERROR, "ACPI DSDT table not found!\n"));
-      ASSERT_EFI_ERROR (Status);
+      //ASSERT_EFI_ERROR (Status);
       return Status;
     }
 
